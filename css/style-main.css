@@ -1,0 +1,319 @@
+/* ---------- hero ------------- */
+.hero-container {
+  width: 100vw;
+  height: 70vh;
+  max-height: 90vh;
+  max-width: 100vw;
+  min-width: 100vw;
+  background-image: url(../Media/img/noodles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 68%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  margin-bottom: 75px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  text-align: center;
+  width: 700px;
+  height: 500px;
+}
+
+.hero-container h1 {
+  color: #ffffff;
+  font-size: 70pt;
+}
+
+/* ---------- statement section ------------- */
+
+/* @media screen and (min-width: 1800px) {
+  .statement-landing {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+} */
+
+.statement-landing > img {
+  height: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 25px;
+}
+
+.statement-landing p {
+  padding: 0px 100px;
+  text-align: justify;
+  color: #57606f;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.statement-landing h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #1e272e;
+}
+
+.statement-landing > ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0px;
+  margin-bottom: 60px;
+}
+
+.statement-landing a {
+  color: #57606f;
+  text-decoration: none;
+  
+}
+
+.statement-landing li {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #dcdde1;
+  color: #57606f;
+}
+.statement-landing li:hover {
+  color: #1e272e;
+}
+
+.image-divide-1 {
+  width: 100vw;
+  height: 45vh;
+  min-height: 45vh;
+  background-image: url(../Media/img/kitchen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+/* ---------- story section ------------- */
+
+.our-story-landing {
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* margin: 100px; */
+}
+
+.our-story-logo {
+  width: auto;
+  margin: 50px;
+}
+
+.our-story-logo img {
+  height: 350px;
+}
+
+.our-story-text {
+  padding: 10px 50px;
+ /*  max-width: 850px; */
+ margin: 20px;
+ padding: 0px 100px;
+}
+
+.our-story-text p {
+  font-size: 1.5em;
+  color: #57606f;
+  margin-bottom: 50px;
+}
+
+.our-story-text h2 {
+  font-size: 2em;
+  color: #1e272e;
+  text-align: center;
+}
+
+.our-story-text a {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #dcdde1;
+  color: #57606f;
+
+}
+
+
+/* ------------------ TABLET CSS -------------- */
+
+
+@media screen and (min-width: 501px) and (max-width: 1100px){
+  .hero-container {
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .hero-title {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .hero-container h1 {
+    font-size: 4.5em;
+    color: white;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  /* ---------- statement section ------------- */
+  
+  .statement-landing > img {
+    height: 100px;
+  }
+  
+  .statement-landing p {
+    padding: 0px 25px;
+    text-align: justify;
+  }
+  
+  .statement-landing li {
+    font-size: 1em;
+  }
+  
+  .image-divide-1 {
+    background-position-y: 0px;
+  }
+  
+  /* ---------- story section ------------- */
+  
+  .our-story-landing {
+    margin: 0px;
+  }
+  
+  .our-story-logo img {
+    height: 250px;
+  }
+  
+  .our-story-text {
+    padding: 0px;
+  }
+  
+  .our-story-text h2 {
+    text-align: center;
+  }
+  
+  .our-story-text p {
+    text-align: justify;
+  }
+  
+  .our-story-text a {
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+} 
+
+/* ---------------MOBILE CSS -------------- */
+
+@media screen and (max-width: 500px) {
+  .hero-container {
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .hero-container h1 {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  /* ---------- statement section ------------- */
+  
+  .statement-landing > img {
+    height: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+  }
+  
+  .statement-landing h2 {
+    font-size: 1.5em;
+  }
+
+  .statement-landing p {
+    padding: 0px 25px;
+    text-align: justify;
+    font-size: 1em;
+  }
+  
+  .statement-landing li {
+    font-size: 1em;
+  }
+  
+  .image-divide-1 {
+    background-position-y: 0px;
+  }
+  
+  /* ---------- story section ------------- */
+  
+  .our-story-landing {
+    margin: 0px;
+  }
+  
+  .our-story-logo img {
+    height: 250px;
+  }
+  
+  .our-story-text {
+    padding: 0px;
+  }
+  
+  .our-story-text h2 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .our-story-text p {
+    text-align: justify;
+    font-size: 1em;
+  }
+  
+  .our-story-text a {
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href=https://fonts.googleapis.com /> <link
+    rel="preconnect" href=https://fonts.gstatic.com crossorigin /> <link
+    href=https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap
+    rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../Media/Logos/meijin_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/stylebase.css" />
+    <link rel="stylesheet" href="../css/style-reservations.css" />
+    <title>MnR | Reservations</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../html/index.html">
+          <img src="../Media/Logos/meijin_transp_brown.png" alt="Meijin Logo" />
+        </a>
+        <ul>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/menu.html">Menu</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="../html/reservations.html">Reservations</a></li>
+        </ul>
+      </div>
+
+      <!--         ------- mobile nav ------- -->
+
+      <div class="mobile-menu">
+        <a href="javascript:void(0);" class="menu-icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="" class="logo">
+          <img src="../Media/Logos/meijin_transp_brown.png" alt="Logo Meijin" />
+        </a>
+        <div id="mobile-links">
+          <a href="../html/index.html">Home</a>
+          <a href="../html/menu.html">Menu</a>
+          <a href="">Our Story</a>
+          <a href="">Order</a>
+          <a href="../html/reservations.html">Reservations</a>
+        </div>
+        <script>
+          function openMenu() {
+            var x = document.getElementById("mobile-links");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
+      </div>
+    </header>
+    <div class="hero-book">
+      <div class="hero-title">
+        <h1>Book a table</h1>
+        <p>Enjoy a bite at one of our restaurants</p>
+      </div>
+      <div class="book-search">
+        <form action="">
+          <label for="restaurant"></label>
+          <select name="restaurant" id="restaurant">
+            <option selected value="Chiado">Choose a restaurant</option>
+            <option value="Chiado">Chiado</option>
+            <option value="Oeiras">Oeiras</option>
+            <option value="Cascais">Porto</option>
+          </select>
+            <label for="date"></label>
+          <input
+            type="text"
+            placeholder="Date"
+            class="textbox-n"
+            onfocus="(this.type='date')"
+            onmouseover="(this.type='date')"
+            name="date"
+            id="date"
+          />
+          <label for="guests"></label>
+          <select name="guests" id="guests">
+            <option selected value="0">Number of guests</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <input class="submit" type="submit" value="Check Availability" />
+        </form>
+      </div>
+    </div>
+    <div class="book-search-mobile">
+      <form action="">
+        <label required for="restaurant"></label>
+        <select name="restaurant" id="restaurant">
+          <option selected value="Chiado">Choose a restaurant</option>
+          <option value="Chiado">Chiado</option>
+          <option value="Oeiras">Oeiras</option>
+          <option value="Cascais">Porto</option>
+        </select>
+        <label for="date"></label>
+        <input
+          type="text"
+          placeholder="Date"
+          class="textbox-n"
+          onfocus="(this.type='date')"
+          onmouseover="(this.type='date')"
+          name="date"
+          id="date"
+        />
+        <label for="guests"></label>
+        <select name="guests" id="guests">
+          <option selected value="0">Number of guests</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        <input class="submit" type="submit" value="Check Availability" />
+      </form>
+    </div>
+  </div>
+    <section class="break">
+      <div>
+        <h2>Experience now</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          beatae consequatur excepturi vel culpa aut accusamus quasi cupiditate
+          optio nemo, laudantium cumque iste! Eos dolores eum libero quisquam
+          beatae Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Laudantium cumque iste! Eos dolores eum libero
+          quisquam beatae sunt?
+        </p>
+      </div>
+    </section>
+    <section class="restaurants">
+      <h2>Our Restaurants</h2>
+      <div class="locations">
+        <div>
+          <div class="location-pic"></div>
+          <h3>Chiado</h3>
+          <p>Rua Cesario verde 6, Lisboa</p>
+        </div>
+        <div>
+          <div class="location-pic-2"></div>
+          <h3>Oeiras</h3>
+          <p>Rua Luis de Camões 18, Oeiras</p>
+        </div>
+        <div>
+          <div class="location-pic-3"></div>
+          <h3>Porto</h3>
+          <p>Avenida Fernando Pessoa 28, Porto</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="../media/img/smicons/facebook.png" alt="facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="../media/img/smicons/instagram.png" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/" target="_blank"
+            ><img src="../media/img/smicons/tiktok.png" alt="tiktok" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.x.com/" target="_blank"
+            ><img src="../media/img/smicons/x.png" alt="x" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img src="../media/img/smicons/youtube.png" alt="youtube" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/" target="_blank"
+            ><img src="../media/img/smicons/pinterest.png" alt="pinterest" />
+          </a>
+        </li>
+      </ul>
+      <ul class="footer-links">
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="">Our Story</a></li>
+        <li><a href="../html/menu.html">Menu</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="../html/reservations.html">Reservations</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li>
+          <a href=""
+            >&copy;2024 Meijin No Ramen &#9874; A TheWorkshop&reg; Brand
+            &#9874;</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
